@@ -14,7 +14,7 @@
 
   <groupId>org.jacoco</groupId>
   <artifactId>org.jacoco.build</artifactId>
-  <version>0.7.10-SNAPSHOT</version>
+  <version>0.7.9-dso-1</version>
   <packaging>pom</packaging>
 
   <name>JaCoCo</name>
@@ -125,7 +125,7 @@
     <maven.compiler.source>1.5</maven.compiler.source>
     <maven.compiler.target>1.5</maven.compiler.target>
 
-    <jvm.args></jvm.args>
+    <jvm.args />
     <argLine>${jvm.args}</argLine>
 
     <!-- Dependencies versions -->
@@ -521,19 +521,19 @@
                 <fileset dir="${basedir}" includes="**/*.java,**/*.xml,**/*.bsh" excludes="target/**,.idea/**,nb-configuration.xml" id="missinglicense.fileset">
                   <not>
                     <and>
-                      <contains text="Copyright (c) 2009, 2017 Mountainminds GmbH &amp; Co. KG and Contributors"/>
-                      <contains text="All rights reserved. This program and the accompanying materials"/>
-                      <contains text="are made available under the terms of the Eclipse Public License v1.0"/>
-                      <contains text="which accompanies this distribution, and is available at"/>
-                      <contains text="http://www.eclipse.org/legal/epl-v10.html"/>
+                      <contains text="Copyright (c) 2009, 2017 Mountainminds GmbH &amp; Co. KG and Contributors" />
+                      <contains text="All rights reserved. This program and the accompanying materials" />
+                      <contains text="are made available under the terms of the Eclipse Public License v1.0" />
+                      <contains text="which accompanies this distribution, and is available at" />
+                      <contains text="http://www.eclipse.org/legal/epl-v10.html" />
                     </and>
                   </not>
                 </fileset>
-                <pathconvert property="missing" refid="missinglicense.fileset"/>
+                <pathconvert property="missing" refid="missinglicense.fileset" />
                 <fail message="Invalid license info in: ${missing}">
                   <condition>
                     <not>
-                      <equals arg1="${missing}" arg2=""/>
+                      <equals arg1="${missing}" arg2="" />
                     </not>
                   </condition>
                 </fail>
@@ -850,7 +850,7 @@
                 </goals>
                 <configuration>
                   <rules>
-                    <requireReleaseVersion/>
+                    <requireReleaseVersion />
                     <requireProperty>
                       <property>buildNumber</property>
                       <regex>[0-9a-f]{40}</regex>
@@ -914,7 +914,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -927,7 +927,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -941,7 +941,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -954,7 +954,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -967,7 +967,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -980,7 +980,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -993,7 +993,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -1006,7 +1006,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore></ignore>
+                        <ignore />
                       </action>
                     </pluginExecution>
                   </pluginExecutions>
